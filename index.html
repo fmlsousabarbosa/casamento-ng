@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nathan e Giovanna — Nosso Casamento</title>
+<style>
+:root{--serenity:#a8cff0;--light:#d8eaf8;--mid:#5685ad;--dark:#245184;--off:#fafbfc;--gray:#91a5b8;--shadow:0 10px 30px rgba(36,81,132,.08)}
+*{box-sizing:border-box;margin:0;padding:0} body{font-family:Georgia,"Times New Roman",serif;color:var(--dark);background:var(--off);line-height:1.6}
+.script{font-family:"Brush Script MT","Segoe Script",cursive;font-weight:400}
+.container{width:min(1120px,calc(100% - 40px));margin:auto}.section{padding:85px 0;overflow:hidden;position:relative}
+.divider{width:120px;height:1px;background:var(--mid);margin:22px auto;position:relative}.divider:after{content:"♡";position:absolute;left:50%;top:50%;transform:translate(-50%,-55%);background:var(--off);padding:0 12px}
+button{font:inherit}.fake-button{padding:12px 28px;border:0;border-radius:30px;background:var(--light);color:var(--dark);letter-spacing:1px;cursor:default}
+header{min-height:76px;background:#fff;border-bottom:1px solid rgba(86,133,173,.15);display:flex;align-items:center}
+.header-inner{width:min(1160px,calc(100% - 32px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.monogram,.footer-monogram{color:var(--serenity);line-height:1}.monogram{font-size:42px}nav{display:flex;gap:25px;justify-content:center;flex-wrap:wrap}nav span,.footer-nav span{font-size:12px;letter-spacing:1.3px;text-transform:uppercase}.header-heart{font-size:27px;color:var(--mid)}
+.hero{min-height:680px;display:grid;place-items:center;text-align:center;position:relative;background:radial-gradient(circle at 18% 25%,rgba(168,207,240,.3),transparent 25%),radial-gradient(circle at 85% 70%,rgba(216,234,248,.65),transparent 28%),linear-gradient(135deg,#fff,#f6fbff 55%,#eaf5fd)}
+.hero-watermark{position:absolute;font-size:clamp(170px,24vw,310px);color:rgba(168,207,240,.24)}.hero-content{position:relative;z-index:1;padding:55px 20px}.hero-verse{max-width:300px;margin:0 auto 40px;font-style:italic}.hero-names{font-size:clamp(55px,8vw,105px);line-height:1;margin-bottom:24px}.hero-label{font-size:15px;letter-spacing:7px;text-transform:uppercase}.hero-date{font-size:26px;letter-spacing:3px;margin-top:16px}.hero-arrow{font-size:32px;margin-top:32px;color:var(--mid)}
+.opening{text-align:center;background:#fff}.opening-text{max-width:800px;margin:auto;font-size:clamp(20px,2.4vw,27px);font-style:italic}
+.shortcuts{background:#fff;padding-top:20px}.shortcut-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;max-width:900px;margin:auto}.shortcut{text-align:center;padding:20px}.shortcut-icon{width:92px;height:92px;margin:auto auto 14px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#eef8ff,#d7ebfa);font-size:38px;color:var(--mid)}
+.story{background:linear-gradient(#fff,#f5fbff)}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.photo-placeholder{min-height:390px;border-radius:45%;background:linear-gradient(145deg,#dceefb,#a9cdea);display:grid;place-items:center;text-align:center;padding:30px;box-shadow:var(--shadow);border:10px solid rgba(255,255,255,.8)}.story-text h2,.section-title{font-weight:400}.story-text h2{font-size:clamp(45px,6vw,72px)}.story-text p{font-size:19px;margin:20px 0 28px;max-width:520px}
+.verse{text-align:center;background:linear-gradient(90deg,#eaf5fd,#cde5f7,#eaf5fd)}.verse blockquote{max-width:900px;margin:auto;font-size:clamp(22px,3vw,34px);font-style:italic}.verse cite{display:block;margin-top:14px;font-size:15px;letter-spacing:2px}
+.event{background:#fff}.section-title{text-align:center;font-size:clamp(38px,5vw,58px);margin-bottom:30px}.event-grid{display:grid;grid-template-columns:repeat(4,1fr);max-width:1050px;margin:40px auto;border-top:1px solid #c9d9e6;border-bottom:1px solid #c9d9e6}.event-item{text-align:center;padding:30px 20px;border-right:1px solid #c9d9e6}.event-item:last-child{border-right:0}.event-icon{font-size:35px}.event-label{font-size:12px;letter-spacing:2px}.event-value{font-size:18px}
+.access{background:#f5fbff}.section-subtitle{max-width:700px;margin:0 auto 45px;text-align:center;color:#526f8b;font-size:18px}.access-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.access-card{min-height:190px;background:#fff;border-radius:18px;box-shadow:var(--shadow);padding:30px;display:grid;grid-template-columns:70px 1fr;gap:22px;align-items:center}.access-card.full{grid-column:1/-1}.access-icon{width:65px;height:65px;border-radius:50%;display:grid;place-items:center;background:#edf7fe;font-size:30px}.access-card h3{font-size:23px;font-weight:400}.access-card p{color:#5a7690;font-size:16px;margin:5px 0 14px}
+.closing{text-align:center;background:linear-gradient(rgba(235,247,255,.9),rgba(235,247,255,.9)),radial-gradient(circle at 20% 50%,#a8cff0,transparent 30%),radial-gradient(circle at 80% 50%,#d8eaf8,transparent 30%)}.closing-title{font-size:clamp(42px,6vw,72px);font-weight:400;line-height:1.1}
+footer{text-align:center;background:#fff;padding:55px 20px 35px;border-top:1px solid rgba(86,133,173,.15)}.footer-monogram{font-size:65px}.footer-names{font-size:34px}.footer-heart{font-size:24px;margin:10px 0 20px}.footer-nav{display:flex;justify-content:center;gap:22px;flex-wrap:wrap}
+@media(max-width:850px){.header-inner{flex-direction:column;padding:15px 0}nav{gap:13px}.shortcut-grid,.event-grid{grid-template-columns:repeat(2,1fr)}.story-grid{grid-template-columns:1fr;gap:35px}.event-item:nth-child(2){border-right:0}.event-item:nth-child(-n+2){border-bottom:1px solid #c9d9e6}}
+@media(max-width:620px){.container{width:calc(100% - 28px)}.section{padding:65px 0}.hero{min-height:620px}.shortcut-grid,.event-grid,.access-grid{grid-template-columns:1fr}.event-item{border-right:0;border-bottom:1px solid #c9d9e6}.event-item:last-child{border-bottom:0}.access-card.full{grid-column:auto}.access-card{grid-template-columns:55px 1fr;padding:22px}.access-icon{width:52px;height:52px}.header-heart{display:none}}
+</style>
+</head>
+<body>
+<header><div class="header-inner"><div class="monogram">SB</div><nav><span>Início</span><span>Nossa História</span><span>Informações</span><span>Lista de Presentes</span><span>Confirmação</span></nav><div class="header-heart">♡</div></div></header>
+
+<main>
+<section class="hero"><div class="hero-watermark">SB</div><div class="hero-content">
+<p class="hero-verse">“O amor tudo sofre,<br>tudo crê, tudo espera,<br>tudo suporta.”<br><small>1 Coríntios 13:7</small></p>
+<h1 class="hero-names script">Nathan e Giovanna</h1><p class="hero-label">Nosso Casamento</p><p class="hero-date">21 de Março de 2027</p><div class="hero-arrow">⌄</div>
+</div></section>
+
+<section class="section opening"><div class="container"><div class="divider"></div><p class="opening-text">Com a Bênção de Deus e de nossos Pais,<br>nos alegramos em convidá-los para celebrar o amor<br>e o nascimento da família Sousa Barbosa.</p><div class="divider"></div></div></section>
+
+<section class="section shortcuts"><div class="container"><div class="shortcut-grid">
+<div class="shortcut"><div class="shortcut-icon">♡</div><div>Nossa<br>História</div></div>
+<div class="shortcut"><div class="shortcut-icon">▦</div><div>Informações<br>do Evento</div></div>
+<div class="shortcut"><div class="shortcut-icon">⌖</div><div>Como<br>Chegar</div></div>
+<div class="shortcut"><div class="shortcut-icon">♧</div><div>Lista<br>de Presentes</div></div>
+</div></div></section>
+
+<section class="section story"><div class="container story-grid"><div class="photo-placeholder">ESPAÇO RESERVADO PARA<br>A FOTO DO CASAL</div><div class="story-text"><h2 class="script">Nossa História</h2><p>Deus tem escrito a nossa história com muito cuidado, e agora queremos compartilhar um novo capítulo com vocês.</p><button class="fake-button">CONHEÇA NOSSA HISTÓRIA →</button></div></div></section>
+
+<section class="section verse"><div class="container"><blockquote>“Acima de tudo, porém, revistam-se do amor, que é o elo perfeito.”</blockquote><cite>Colossenses 3:14</cite></div></section>
+
+<section class="section event"><div class="container"><h2 class="section-title script">Informações do Evento</h2><div class="event-grid">
+<div class="event-item"><div class="event-icon">▣</div><div class="event-label">DOMINGO</div><div class="event-value">21 DE MARÇO<br>DE 2027</div></div>
+<div class="event-item"><div class="event-icon">◷</div><div class="event-label">ÀS</div><div class="event-value">13H00</div></div>
+<div class="event-item"><div class="event-icon">⌖</div><div class="event-label">LOCAL</div><div class="event-value">RECANTO<br>FLOR DA VILA</div></div>
+<div class="event-item"><div class="event-icon">♧</div><div class="event-label">TRAJE</div><div class="event-value">PASSEIO<br>CHIQUE</div></div>
+</div><div style="text-align:center"><button class="fake-button">MAIS DETALHES →</button></div></div></section>
+
+<section class="section access"><div class="container"><h2 class="section-title script">Informações para o Grande Dia</h2><p class="section-subtitle">Tudo preparado com carinho para ajudar vocês a aproveitarem cada detalhe desse momento.</p><div class="access-grid">
+<article class="access-card"><div class="access-icon">⌖</div><div><h3>Como Chegar</h3><p>Veja todas as informações de acesso, estacionamento e transporte por aplicativo.</p><button class="fake-button">VER MAIS</button></div></article>
+<article class="access-card"><div class="access-icon">♧</div><div><h3>Lista de Presentes</h3><p>Sua presença já é o nosso maior presente, mas se desejar nos abençoar ainda mais...</p><button class="fake-button">VER LISTA</button></div></article>
+<article class="access-card"><div class="access-icon">☑</div><div><h3>Confirmação de Presença</h3><p>Em breve disponibilizaremos o acesso para confirmação de presença.</p><button class="fake-button">ACESSAR</button></div></article>
+<article class="access-card"><div class="access-icon">♧</div><div><h3>Dress Code</h3><p><strong>Passeio Chique</strong><br>Confira dicas e inspirações para o look deste dia.</p><button class="fake-button">VER DICAS</button></div></article>
+<article class="access-card full"><div class="access-icon">♨</div><div><h3>Menu</h3><p>Conheça um pouco do nosso cardápio.</p><button class="fake-button">VER MENU</button></div></article>
+</div></div></section>
+
+<section class="section closing"><div class="container"><h2 class="closing-title script">Estamos ansiosos para<br>celebrar esse dia com vocês!</h2><div class="divider"></div></div></section>
+</main>
+
+<footer><div class="footer-monogram">SB</div><div class="footer-names script">Nathan e Giovanna</div><div class="footer-heart">♡</div><div class="footer-nav"><span>Início</span><span>Nossa História</span><span>Informações</span><span>Lista de Presentes</span><span>Confirmação</span></div><p style="margin-top:30px;font-size:12px;color:#91a5b8">© 2027 Nathan & Giovanna</p></footer>
+</body>
+</html>
