@@ -331,5 +331,50 @@
 </nav>
 <div class="copyright">© 2027 Nathan & Giovanna</div>
 </footer>
+
+<script>
+document.querySelectorAll(
+  'header nav a[href="#local"], ' +
+  'header nav a[href="#presentes"], ' +
+  'header nav a[href="#dress-code"]'
+).forEach(link => {
+  link.addEventListener("click", function (event) {
+    const destino = document.querySelector(
+      this.getAttribute("href")
+    );
+
+    if (!destino) return;
+
+    event.preventDefault();
+
+    const cabecalho = document.querySelector("header");
+    const alturaCabecalho = cabecalho
+      ? cabecalho.getBoundingClientRect().height
+      : 0;
+
+    const retangulo = destino.getBoundingClientRect();
+
+    const centroVisivel =
+      (alturaCabecalho + window.innerHeight) / 2;
+
+    const posicao =
+      retangulo.top +
+      window.scrollY +
+      retangulo.height / 2 -
+      centroVisivel;
+
+    window.scrollTo({
+      top: Math.max(0, posicao),
+      behavior: "smooth"
+    });
+
+    history.replaceState(
+      null,
+      "",
+      this.getAttribute("href")
+    );
+  });
+});
+</script>
 </body>
 </html>
