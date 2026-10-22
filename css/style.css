@@ -522,3 +522,19 @@ section{padding:55px 0}
 #detalhes {
     scroll-margin-top: 20px;
 }
+
+/* Posiciona os cartões selecionados perto do centro da tela */
+#local,
+#presentes,
+#dress-code {
+    scroll-margin-top: 40vh;
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 760px) {
+    #local,
+    #presentes,
+    #dress-code {
+        scroll-margin-top: 38vh;
+    }
+}
